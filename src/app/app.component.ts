@@ -9,6 +9,7 @@ export class AppComponent {
   status = 'Sleep';
 
   change() {
+    // yea it could've been done better
     switch (this.status) {
       case 'Sleep':
         this.status = 'Study';
