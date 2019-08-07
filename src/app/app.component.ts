@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Week2Assessment';
+  status = 'Sleep';
+
+  change() {
+    switch (this.status) {
+      case 'Sleep':
+        this.status = 'Study';
+        break;
+      case 'Study':
+        this.status = 'Party';
+        break;
+      case 'Party':
+        this.status = 'Sleep';
+        break;
+    }
+  }
 }
